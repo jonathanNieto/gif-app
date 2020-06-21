@@ -4,7 +4,10 @@
 }
 
 body {
-  padding: 4rem;
+  padding: 0.5rem;
+  @media screen and (max-width: 767px) {
+    padding: 4rem;
+  }
 }
 
 input {
@@ -23,12 +26,18 @@ input {
   border-radius: 6px;
   margin-bottom: 10px;
   margin-right: 10px;
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
   max-width: 200px;
   overflow: hidden;
 }
 
 .gif-card p {
   padding: 5px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   width: 200px;
   overflow: hidden;
   text-align: center;
